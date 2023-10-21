@@ -50,3 +50,10 @@
     color: #ffff00;
     filter: drop-shadow(1px 0px 5px #0000007f);
 }
+.active:hover {
+    box-shadow: 0px 0px 9px -1px #d0bfffb8;
+    border-color: var(--light-color);
+}
+.active:hover a {
+    color: var(--light-color);
+}
