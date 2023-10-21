@@ -12,7 +12,7 @@
     color: var(--comp-color);
 }
 .tran-color {
-    color: transparent;
+    color: white;
 }
 /* background color class */
 
@@ -30,7 +30,6 @@
     font-family: 'Grandstander', cursive;
     letter-spacing: 1px;
     -webkit-text-stroke: 2px;
-    -webkit-text-fill-color: white;
     -webkit-text-stroke-color: black;
 }
 
