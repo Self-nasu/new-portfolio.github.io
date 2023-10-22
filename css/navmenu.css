@@ -95,10 +95,10 @@
 }
 .toggle-icon {
     border: 2px solid white;
-    padding: 18%;
+    padding: 16%;
     border-radius: 50%;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 25%;
+    padding-right: 25%;
     box-shadow: 0px 0px 9px -2px #00000092;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
@@ -106,7 +106,7 @@
 }
 .toggle-icon button{
     color: white !important;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
     background-color: transparent;
