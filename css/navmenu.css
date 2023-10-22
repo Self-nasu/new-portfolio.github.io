@@ -7,7 +7,7 @@
     display: flex;
 }
 #navmenu {
-    display: flex;
+    display: none;
     width: 60%;
     padding-left: 4.2rem;
     padding-right: 4.2rem;
@@ -17,7 +17,7 @@
     border-bottom-right-radius: 25px;
     justify-content: center;
     align-items: center;
-    animation: navmenu 2s ease-in-out;
+    animation: navmenu 1.8s ease-in-out;
     background-color: #000000c7;
     box-shadow: 0px 3px 7px -2px #00000092;
 }
@@ -83,7 +83,7 @@
     color: var(--light-color);
 }
 .toggle-navmenu {
-    display: none;
+    display: flex;
     width: 5%;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -95,20 +95,23 @@
 }
 .toggle-icon {
     border: 2px solid white;
-    padding: 24%;
+    padding: 18%;
     border-radius: 50%;
-    padding-left: 45%;
-    padding-right: 45%;
+    padding-left: 30%;
+    padding-right: 30%;
     box-shadow: 0px 0px 9px -2px #00000092;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
-    margin: 0.65rem;
+    margin: 0.55rem;
 }
-.toggle-icon a{
+.toggle-icon button{
     color: white !important;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
 }
 
 .toggle-icon:hover {
@@ -116,7 +119,7 @@
     cursor: pointer;
     box-shadow: 0px 0px 9px -1px var(--glow-color);
 }
-.toggle-icon:hover a {
+.toggle-icon:hover button {
     color: var(--light-color) !important;
     filter: drop-shadow(1px 0px 5px #0000007f);
 }
