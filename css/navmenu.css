@@ -6,8 +6,8 @@
 .navmenu-holder {
     display: flex;
 }
-.navmenu {
-    display: none;
+#navmenu {
+    display: flex;
     width: 60%;
     padding-left: 4.2rem;
     padding-right: 4.2rem;
@@ -83,7 +83,7 @@
     color: var(--light-color);
 }
 .toggle-navmenu {
-    display: flex;
+    display: none;
     width: 5%;
     padding-left: 2rem;
     padding-right: 2rem;
