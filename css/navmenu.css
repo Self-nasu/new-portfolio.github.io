@@ -7,23 +7,48 @@
     display: flex;
 }
 .navmenu {
-    display: flex;
+    display: none;
     width: 60%;
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 4.2rem;
+    padding-right: 4.2rem;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     justify-content: center;
     align-items: center;
-    background-color: #000000bd;
+    animation: navmenu 2s ease-in-out;
+    background-color: #000000c7;
     box-shadow: 0px 3px 7px -2px #00000092;
 }
+@keyframes navmenu {
+    0% {
+        overflow: hidden;
+        width: 5%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        opacity: 50%;
+    }
+    100% {
+        width: 60%;
+        padding-left: 4.2rem;
+        padding-right: 4.2rem;
+        opacity: 100%;
+    }
+}
 .navmenu div{
-    margin: 14px;
+    margin: 0.65rem;
     margin-left: 3.25%;
     margin-right: 3.25%;
+    animation: menuicon 2s ease-in-out;
+}
+@keyframes menuicon {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 .menu-icon {
     border: 2px solid white;
@@ -37,7 +62,7 @@
 }
 .menu-icon a {
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
@@ -51,9 +76,47 @@
     filter: drop-shadow(1px 0px 5px #0000007f);
 }
 .active:hover {
-    box-shadow: 0px 0px 9px -1px #d0bfffb8;
+    box-shadow: 0px 0px 9px -1px var(--glow-color);
     border-color: var(--light-color);
 }
 .active:hover a {
     color: var(--light-color);
+}
+.toggle-navmenu {
+    display: flex;
+    width: 5%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000c7;
+    box-shadow: 0px 3px 7px -2px #00000092;
+}
+.toggle-icon {
+    border: 2px solid white;
+    padding: 24%;
+    border-radius: 50%;
+    padding-left: 45%;
+    padding-right: 45%;
+    box-shadow: 0px 0px 9px -2px #00000092;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    margin: 0.65rem;
+}
+.toggle-icon a{
+    color: white !important;
+    font-size: 1.5rem;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.toggle-icon:hover {
+    border-color: var(--light-color);
+    cursor: pointer;
+    box-shadow: 0px 0px 9px -1px var(--glow-color);
+}
+.toggle-icon:hover a {
+    color: var(--light-color) !important;
+    filter: drop-shadow(1px 0px 5px #0000007f);
 }
