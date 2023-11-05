@@ -84,7 +84,7 @@
 }
 .toggle-navmenu {
     display: flex;
-    width: 5%;
+    width: 4%;
     padding-left: 2rem;
     padding-right: 2rem;
     border-radius: 35px;
@@ -95,7 +95,7 @@
 }
 .toggle-icon {
     border: 2px solid white;
-    padding: 16%;
+    padding: 0%;
     border-radius: 50%;
     padding-left: 25%;
     padding-right: 25%;
@@ -112,6 +112,8 @@
     background-color: transparent;
     box-shadow: none;
     border: none;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .toggle-icon:hover {
@@ -123,3 +125,4 @@
     color: var(--light-color) !important;
     filter: drop-shadow(1px 0px 5px #0000007f);
 }
+
